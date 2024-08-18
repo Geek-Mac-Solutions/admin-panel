@@ -147,14 +147,7 @@ $(document).ready( function () {
             ]
         }
     );
-    $('#pendingOrderPickUp').DataTable(
-        {
-            dom: 'Bfrtip',
-            buttons: [
-                'excelHtml5'
-            ]
-        }
-    );
+   
     $('#pendingOrderDeliver').DataTable(
         {
             dom: 'Bfrtip',
