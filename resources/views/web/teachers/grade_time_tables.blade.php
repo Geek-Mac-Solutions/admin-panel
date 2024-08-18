@@ -13,8 +13,7 @@
          </h1>
       </div>
       <div class="col-lg-3 col-sm-3 pt-lg-0 pt-3 text-end">
-         <i class="fa-solid fa-file-excel fs-2 text-success mb-2 hvr-grow"></i>
-         <span class=" text-uppercase font-13 fw-bold text-dark"> Download excel</span>
+         
       </div>
    </div>
 </div>
@@ -22,7 +21,7 @@
 <div class="row middle-hight">
    <div class="col-lg-8 mx-auto">
       <div class="table-responsive">
-         <table id="gradeTimeTbl" class="table table-striped table-hover table-bordered">
+         <table   class="table table-striped table-hover table-bordered">
             <thead class="text-white gradient-background text-uppercase fw-light font-14">
                <tr>
                   <th >Grade</th>

@@ -16,8 +16,7 @@
          </p>
       </div>
       <div class="col-lg-3 col-sm-3 pt-lg-0 pt-3 text-end">
-         <i class="fa-solid fa-file-excel fs-2 text-success mb-2 hvr-grow"></i>
-         <span class=" text-uppercase font-13 fw-bold text-dark"> Download excel</span>
+       
       </div>
    </div>
 </div>
@@ -28,13 +27,13 @@
     <div class="col-12">
         <div class="row align-items-center">
            <div class="col-lg-4 col-sm-5 ">
-          
+
            </div>
            <div class="col-lg-8 pt-lg-0 pt-sm-3 pt-3">
               <form action="">
                 <div class="row justify-content-end">
                     <div class="col-lg-5 col-sm-5 col-6">
-                       <select class="form-select form-select-lg border border-info rounded-pill font-15 fw-500 text-dark py-2 
+                       <select class="form-select form-select-lg border border-info rounded-pill font-15 fw-500 text-dark py-2
                        " aria-label=".form-select-lg example">
                           <option selected="">Select Employee Name Filter</option>
                           <option value="1">One</option>
@@ -42,14 +41,14 @@
                           <option value="3">Three</option>
                        </select>
                     </div>
-                    
+
                     <div class="col-lg-2 col-sm-2 col-6 pt-lg-0 pt-sm-0 pt-3">
                        <button type="submit" class="btn w-100 text-uppercase font-14 text-white rounded-pill py-2 px-3
                           bg-success fw-bolder align-items-center ">Submit</button>
                     </div>
                  </div>
               </form>
-              
+
            </div>
         </div>
      </div>
@@ -70,7 +69,7 @@
                     <th>STATUS</th>
                     <th>REMARK</th>
                     <th>EDIT/DELETE</th>
-                   
+
                 </tr>
             </thead>
             <tbody class="font-13 fw-500 align-items-center">
@@ -86,7 +85,7 @@
                   <td> </td>
                   <td> </td>
               <td>
-                        
+
                     <button class="btn btn-warning fw-500 font-11 px-2 w-100 rounded-pill text-white"
                        data-bs-toggle="modal" data-bs-target="#pulishEdit">EDIT</button>
                     <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="pulishEdit"

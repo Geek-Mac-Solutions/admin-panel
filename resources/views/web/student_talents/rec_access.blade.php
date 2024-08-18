@@ -15,8 +15,7 @@
 
       </div>
       <div class="col-lg-3 col-sm-3 pt-lg-0 pt-3 text-end">
-         <i class="fa-solid fa-file-excel fs-2 text-success mb-2 hvr-grow"></i>
-         <span class=" text-uppercase font-13 fw-bold text-dark"> Download excel</span>
+         
 
 <p>
     <a href="{{ route('web.rec.add_rec') }}" class="text-white bg-primary font-14 fw-500
@@ -119,10 +118,7 @@
                      </a></td>
                      <td> </td>
                      <td> </td>
-                     <td><a href="{{ route('web.analysis.report') }}" class=" text-white
-                        font-12 text-white rounded-pill py-2 px-3 bg-primary fw-500
-                        align-items-center   hvr-shrink">View
-                     </a>
+                     <td>
                      </td>
                      <td>Approved
                     </td>

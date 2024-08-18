@@ -22,8 +22,7 @@
       </div>
 
       <div class="col-lg-3 col-sm-3 pt-lg-0 pt-3 text-end">
-        <i class="fa-solid fa-file-excel fs-2 text-success mb-2 hvr-grow"></i>
-        <span class=" text-uppercase font-13 fw-bold text-dark"> Download excel</span>
+      
     </div>
    </div>
 </div>
@@ -37,7 +36,7 @@
             <div class="row align-items-center text-center ">
                 <div class="col-lg-3 col-sm-6 mb-lg-0 mb-sm-3  mb-3 px-sm-0">
                   <span class="  text-uppercase font-13 w-100 text-white rounded-3 py-2 px-3
-                     bg-warning fw-bolder align-items-center  ">ANNUAL LEAVE BALANCE - 14 
+                     bg-warning fw-bolder align-items-center  ">ANNUAL LEAVE BALANCE - 14
                      - 15000</span>
                </div>
                <div class="col-lg-3  col-sm-6 mb-lg-0 mb-sm-3 mb-3">
@@ -51,9 +50,9 @@
              <div class="col-lg-3  col-sm-6 mb-lg-0 mb-sm-3  mb-3 px-sm-0 text-lg-end">
                 <a class=" rounded-pill font-13 w-100 text-white rounded-3 py-2 px-3
                   bg-secondary fw-500 align-items-center " data-bs-toggle="modal" data-bs-target="#leaveRequest">
-                   
-                    <i class="fa fa-plus"></i>  Leave Request  
-                  
+
+                    <i class="fa fa-plus"></i>  Leave Request
+
                  </a>
                  <div class="modal fade" id="leaveRequest" data-bs-backdrop="static" tabindex="-1"
                   aria-labelledby="leaveRequest" aria-hidden="true">
@@ -70,8 +69,8 @@
                                 <div class="modal-body ">
                                    <div class="mb-2">
                                       <label class="form-label font-14 fw-bold text-purple  mb-0">DATE RANGE  </label>
-                                     
-                                
+
+
 
                                        <input type="date" class="form-control fw-500 rounded-3 border-dark font-13" id="exampleFormControlInput1"
                                         placeholder="name@example.com">
@@ -80,7 +79,7 @@
                                    </div>
                                    <div class="mb-2">
                                       <label class="form-label font-14 fw-bold text-purple  mb-0">LEAVE TYPE </label>
-                                      <select class="form-select fw-500 rounded-3 border-dark font-13" 
+                                      <select class="form-select fw-500 rounded-3 border-dark font-13"
                                       aria-label="Default select example">
                                          <option selected="">Select Leave Type</option>
                                          <option value="1">Casual</option>
@@ -93,7 +92,7 @@
                                    </div>
                                 </div>
                                 <div class="text-center">
-                                   <button type="button" class="btn text-uppercase font-12 
+                                   <button type="button" class="btn text-uppercase font-12
                                       text-white rounded-pill py-2 px-5 w-50 bg-primary fw-500   text-white ">Request</button>
                                 </div>
                              </form>
@@ -116,7 +115,7 @@
                    <th>ADMIN REMARKS
                    </th>
                    <th>STATUS</th>
-                   
+
                    </tr>
                 </thead>
                 <tbody class="font-13 fw-500 align-items-center">
@@ -127,8 +126,8 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                 
-                  
+
+
                    </tr>
                 </tbody>
              </table>

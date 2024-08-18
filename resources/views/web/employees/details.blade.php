@@ -12,11 +12,10 @@
          <h1 class="font-36 fw-bold text-uppercase text-purple"> OUR TEACHERS
 
          </h1>
-        
+
       </div>
       <div class="col-lg-3 col-sm-3 pt-lg-0 pt-3 text-end">
-         <i class="fa-solid fa-file-excel fs-2 text-success mb-2 hvr-grow"></i>
-         <span class=" text-uppercase font-13 fw-bold text-dark"> Download excel</span>
+
       </div>
    </div>
 </div>
@@ -41,10 +40,10 @@
                   </th>
                   <th>ADDRESS
                   </th>
-                  
+
                   <th>BASIC</th>
                   <th>FIXED
-                    ALLOWANCE 
+                    ALLOWANCE
                   </th>
 
                   <th>WORKING
@@ -67,9 +66,9 @@
                      <td> </td>
                      <td> </td>
                      <td> </td>
-                   
+
                      <td>
-                        
+
                         <button class="btn btn-warning fw-500 font-11 px-2 w-100 rounded-pill text-white"
                            data-bs-toggle="modal" data-bs-target="#pulishEdit">EDIT</button>
                         <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="pulishEdit"

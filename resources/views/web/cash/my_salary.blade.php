@@ -33,12 +33,7 @@
 <div class="container-fluid py-lg-5 py-3 px-lg-5 ">
     <div class="row middle-hight">
 
-        <div class="row justify-content-end">
-            <div class="col-lg-3 col-sm-5 col-8 text-end pb-lg-0 pb-2">
-               <i class="fa-solid fa-file-excel fs-2 text-success mb-2 hvr-grow"></i>
-               <span class=" text-uppercase font-13 fw-bold text-dark"> Download excel</span>
-            </div>
-         </div>
+        
        <div class="col-12">
           <div class="table-responsive  ">
              <table id="mySalaryTbl" class="table table-striped table-hover table-bordered">

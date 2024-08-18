@@ -15,8 +15,7 @@
          ITEM SHOP
       </div>
       <div class="col-lg-3 col-sm-3 pt-lg-0 pt-3 text-end">
-         <i class="fa-solid fa-file-excel fs-2 text-success mb-2 hvr-grow"></i>
-         <span class=" text-uppercase font-13 fw-bold text-dark"> Download excel</span>
+         
          <p  class="w-auto text-center text-uppercase font-12
             text-white rounded-pill py-2 px-3 bg-secondary fw-500 align-items-center
             "> PENDING ORDERS

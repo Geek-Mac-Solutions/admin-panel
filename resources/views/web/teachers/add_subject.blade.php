@@ -15,10 +15,7 @@
          </p>
       </div>
       <div class="col-lg-3 col-sm-3 pt-lg-0 pt-3 ">
-         <div class="text-end">
-            <i class="fa-solid fa-file-excel fs-2 text-success mb-2 hvr-grow "></i>
-            <span class=" text-uppercase font-13 fw-bold text-dark text-end"> Download excel</span>
-         </div>
+         
          <div class="row justify-content-end">
             <div class="col-lg-11">
                <div class="row justify-content-end pt-2">

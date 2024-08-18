@@ -42,65 +42,431 @@ new Chart(ctx, {
 
 
 $(document).ready( function () {
-    $('#feesCashTable').DataTable();
-    $('#feesPosTable').DataTable();
-    $('#feesCardPaymentTable').DataTable();
-    $('#feesCardPaymentTable').DataTable();
-    $('#feesErrorPaymentTable').DataTable();
-    $('#feesBankPaymentTable').DataTable();
-    $('#PaymentHistoryTable').DataTable();
-    $('#otherPyamentCash').DataTable();
-    $('#liveClass').DataTable();
-    $('#attendanceTable').DataTable();
-    $('#cashBlanceTbl').DataTable();
-    $('#mySalaryTbl').DataTable();
-    $('#myLeavesTbl').DataTable();
-    $('#pendingOrderPickUp').DataTable();
-    $('#pendingOrderPickUp').DataTable();
-    $('#pendingOrderDeliver').DataTable();
-    $('#disOrderTbl').DataTable();
-    $('#pendingDisOrder').DataTable();
-    $('#addItems').DataTable();
-    $('#studentDetailsTable').DataTable();
-    $('#inactiveStudents').DataTable();
-    $('#scholarshopDetails').DataTable();
-    $('#scholarshopAdd').DataTable();
-    $('#recAccess').DataTable();
-    $('#addRecAccess').DataTable();
-    $('#analysingTbl').DataTable();
-    $('#pendingCertificateTbl').DataTable();
-    $('#approvedCertificateTbl').DataTable();
-    $('#subjectwiseVideoTbl').DataTable();
-    $('#otherTalenteVideoTbl').DataTable();
-    $('#classIssues').DataTable();
-    $('#videoRecIssues').DataTable();
-    $('#teacherReview').DataTable();
-    $('#classVideoAnalysing').DataTable();
-    $('#classVideosSummery').DataTable();
-    $('#videoTimeTbl').DataTable();
-    $('#teacherPayment').DataTable();
-    $('#paymentAnalysingTbl').DataTable();
-    $('#ourTeacherTbl').DataTable();
-    $('#ourTeacherTbl').DataTable();
-    $('#scheduleClass').DataTable();
-    $('#gradeTimeTbl').DataTable();
-    $('#addSubjectTbl').DataTable();
+    $('#feesCashTable').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#feesPosTable').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#feesCardPaymentTable').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    
+    $('#feesErrorPaymentTable').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#feesBankPaymentTable').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#PaymentHistoryTbl').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#otherPyamentCash').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#liveClass').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#attendanceTable').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#cashBlanceTbl').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#mySalaryTbl').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#myLeavesTbl').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#pendingOrderPickUp').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#pendingOrderPickUp').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#pendingOrderDeliver').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#disOrderTbl').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#pendingDisOrder').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#addItems').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#studentDetailsTable').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#inactiveStudents').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#scholarshopDetails').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#scholarshopAdd').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#recAccess').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#addRecAccess').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#analysingTbl').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#pendingCertificateTbl').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#approvedCertificateTbl').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#subjectwiseVideoTbl').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#otherTalenteVideoTbl').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#classIssues').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#videoRecIssues').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#teacherReview').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#classVideoAnalysing').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#classVideosSummery').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#videoTimeTbl').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#teacherPayment').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#paymentAnalysingTbl').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    $('#ourTeacherTbl').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+     
+    $('#scheduleClass').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+    
+    $('#addSubjectTbl').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
 
-    $('#withHoldingTaxTbl').DataTable();
-    $('#mainCashTbl').DataTable();
-    $('#depositeCashTbl').DataTable();
-    $('#bankCashTbl').DataTable();
-    $('#pettyCashTbl').DataTable();
-    $('#pettyCashViewTbl').DataTable();
-    $('#specialApprovalsTbl').DataTable();
-    $('#employeeSalaryTbl').DataTable();
-    $('#employeeSalaryTbl').DataTable();
-    $('#employeeAttendanceTbl').DataTable();
-    $('#employeeLeaveTbl').DataTable();
-    $('#employeeLeaveCheckTbl').DataTable();
-    $('#pendingLeaveTbl').DataTable();
-    $('#gradeRequestTbl').DataTable();
-    $('#freeRequestTbl').DataTable();
+    $('#withHoldingTaxTbl').DataTable(
+        {
+            dom: 'Bfrtip',
+            buttons: [
+                'excelHtml5'
+            ]
+        }
+    );
+
+
+
+
+
+
+    $('#mainCashTbl').DataTable(  {
+        dom: 'Bfrtip',
+        buttons: [
+            'excelHtml5'
+        ]
+    });
+    $('#depositeCashTbl').DataTable(  {
+        dom: 'Bfrtip',
+        buttons: [
+            'excelHtml5'
+        ]
+    });
+    $('#bankCashTbl').DataTable(  {
+        dom: 'Bfrtip',
+        buttons: [
+            'excelHtml5'
+        ]
+    });
+    $('#pettyCashTbl').DataTable(  {
+        dom: 'Bfrtip',
+        buttons: [
+            'excelHtml5'
+        ]
+    });
+    $('#pettyCashViewTbl').DataTable(  {
+        dom: 'Bfrtip',
+        buttons: [
+            'excelHtml5'
+        ]
+    });
+    $('#specialApprovalsTbl').DataTable(  {
+        dom: 'Bfrtip',
+        buttons: [
+            'excelHtml5'
+        ]
+    });
+    $('#employeeSalaryTbl').DataTable(  {
+        dom: 'Bfrtip',
+        buttons: [
+            'excelHtml5'
+        ]
+    });
+    
+    $('#employeeAttendanceTbl').DataTable(  {
+        dom: 'Bfrtip',
+        buttons: [
+            'excelHtml5'
+        ]
+    });
+    $('#employeeLeaveTbl').DataTable(  {
+        dom: 'Bfrtip',
+        buttons: [
+            'excelHtml5'
+        ]
+    });
+    $('#employeeLeaveCheckTbl').DataTable(  {
+        dom: 'Bfrtip',
+        buttons: [
+            'excelHtml5'
+        ]
+    });
+    $('#pendingLeaveTbl').DataTable(  {
+        dom: 'Bfrtip',
+        buttons: [
+            'excelHtml5'
+        ]
+    });
+    $('#gradeRequestTbl').DataTable(  {
+        dom: 'Bfrtip',
+        buttons: [
+            'excelHtml5'
+        ]
+    });
+    $('#freeRequestTbl').DataTable(  {
+        dom: 'Bfrtip',
+        buttons: [
+            'excelHtml5'
+        ]
+    });
+    $('#incomeTaxTbl').DataTable(  {
+        dom: 'Bfrtip',
+        buttons: [
+            'excelHtml5'
+        ]
+    });
+
+
 
 });
 

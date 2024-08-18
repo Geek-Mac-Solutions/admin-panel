@@ -625,6 +625,44 @@ a:hover,
     background-color: #dc3545; /* Red */
 }
 
+
+/* Style the button inside dt-buttons */
+.dt-buttons .dt-button {
+    background-color: #28a745 !important;
+    color: white !important;
+    border: none !important;
+    padding: 5px 30px !important;
+    font-size: 15px !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    font-weight: 600;
+}
+
+/* Change the color on hover */
+.dt-buttons .dt-button:hover {
+    background-color: #218838 !important;
+}
+
+/* Focus style */
+.dt-buttons .dt-button:focus {
+    outline: none !important;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   @keyframes rotate-circle {
     0% {
       transform: rotate(-45deg);

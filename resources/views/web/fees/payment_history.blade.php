@@ -27,7 +27,7 @@
       <div class="col-12">
        
          <div class="table-responsive  ">
-            <table id="PaymentHistoryTable" class="table table-striped table-hover table-bordered">
+            <table id="PaymentHistoryTbl" class="table table-striped table-hover table-bordered">
                <thead class="text-white gradient-background text-uppercase fw-light font-14">
                   <th>Payment Date</th>
                   <th>Month</th>

@@ -16,8 +16,7 @@
         </p>
       </div>
       <div class="col-lg-3 col-sm-3 pt-lg-0 pt-3 text-end">
-         <i class="fa-solid fa-file-excel fs-2 text-success mb-2 hvr-grow"></i>
-         <span class=" text-uppercase font-13 fw-bold text-dark"> Download excel</span>
+       
          <p>
             <a class=" rounded-pill font-13 w-100 text-white rounded-3 py-2 px-3
                bg-secondary fw-500 align-items-center " data-bs-toggle="modal" data-bs-target="#addItemsForm">
@@ -55,8 +54,8 @@
                                        <option value="2">2</option>
                                     </select>
                                  </div>
-                                
-                         
+
+
                                  <div class="mb-2">
                                     <label class="form-label font-14 fw-bold text-purple  mb-0">PAYMENT DATE </label>
                                     <input type="date" class="form-control fw-500 rounded-3 border-dark font-13"
@@ -70,7 +69,7 @@
 
 
                               </div>
-                              
+
                            </div>
                            <div class="text-center mt-4">
                               <button type="button" class="btn text-uppercase font-12
@@ -110,10 +109,10 @@
                </thead>
                <tbody class="font-13 fw-500 align-items-center">
                   <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>123</td>
+                    <td>dsd</td>
+                    <td>333</td>
+                    <td>333</td>
                      <td>
                         <button class="btn btn-info fw-500 font-11 px-2 w-100 rounded-pill "
                            data-bs-toggle="modal" data-bs-target="#errorDelete">
@@ -136,7 +135,41 @@
                               </div>
                            </div>
                         </div>
-                        
+
+                     </td>
+
+
+                     <td></td>
+                  </tr>
+
+                  <tr>
+                    <td>567</td>
+                    <td>23</td>
+                    <td>66</td>
+                    <td>66</td>
+                     <td>
+                        <button class="btn btn-info fw-500 font-11 px-2 w-100 rounded-pill "
+                           data-bs-toggle="modal" data-bs-target="#errorDelete">
+                           BROWSE</button>
+                        <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="errorDelete"
+                           tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+                           <div class="modal-dialog modal-dialog-centered ">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                 </div>
+                                 <div class="modal-body ">
+                                    <div class="row">
+                                       <div class="col-12">
+                                        <img class="d-block w-100 " src="{{asset('themes/default/img/6.webp')}}" alt="Guru Niwasa LMS">
+
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
                      </td>
 
 

@@ -39,18 +39,12 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [HomeController::class, 'index'])->name('web.main');
-
 // profile
-
 Route::get('/my-profile', [ProfileController::class, 'myProfile'])->name('web.profile');
-
-
-
 // Fees
 Route::get('/fees/view', [FeesController::class, 'feesView'])->name('web.fees.view');
 Route::get('/fees/class-pending', [FeesController::class, 'feesClassPending'])->name('web.fees.class_pending');
 Route::get('/fees/class-fees', [FeesController::class, 'classFees'])->name('web.fees.class_fess');
-
 Route::get('/fees/cash', [FeesController::class, 'classFeesCash'])->name('web.fees.class_fess_cash');
 Route::get('/fees/pos', [FeesController::class, 'classFeesPos'])->name('web.fees.class_fess_Pos');
 Route::get('/fees/card-payment', [FeesController::class, 'classFeesCardPayment'])->name('web.fees.class_fess_card_payment');
@@ -84,9 +78,6 @@ Route::get('/video/super-admin-lms', [VideoController::class, 'videoSuperAdminLm
 // NoticeBoardController
 Route::get('/notice-board', [NoticeBoardController::class, 'noticeBoard'])->name('web.notice.board');
 Route::get('/birthday-list', [NoticeBoardController::class, 'birthdayList'])->name('web.notice.birthday_list');
-
-
-
 
 
 // AuthController
@@ -229,7 +220,7 @@ Route::get('/employees-pending-leaves', [EmployeeController::class, 'employeePen
 
 // StudentApprovalController
 Route::get('/student-approvals', [StudentApprovalController::class, 'studentApproval'])->name('web.student_approvals.all_list');
- 
+
 Route::get('/grade-requests', [StudentApprovalController::class, 'gradeRequests'])
 ->name('web.student_approvals.grade_requests');
 Route::get('/free-requests', [StudentApprovalController::class, 'freeRequests'])

@@ -15,8 +15,7 @@
         </p>
       </div>
       <div class="col-lg-3 col-sm-3 pt-lg-0 pt-3 text-end">
-         <i class="fa-solid fa-file-excel fs-2 text-success mb-2 hvr-grow"></i>
-         <span class=" text-uppercase font-13 fw-bold text-dark"> Download excel</span>
+
          <p>
             <a class=" rounded-pill font-13 w-100 text-white rounded-3 py-2 px-3
                bg-secondary fw-500 align-items-center " data-bs-toggle="modal" data-bs-target="#addItemsForm">
@@ -54,8 +53,8 @@
                                        <option value="2">2</option>
                                     </select>
                                  </div>
-                                
-                          
+
+
                                  <div class="mb-2">
                                     <label class="form-label font-14 fw-bold text-purple  mb-0">DOCUMENT</label>
                                     <input type="file" class="form-control fw-500 rounded-3 border-dark font-13"
@@ -64,7 +63,7 @@
 
 
                               </div>
-                              
+
                            </div>
                            <div class="text-center mt-4">
                               <button type="button" class="btn text-uppercase font-12
@@ -88,21 +87,21 @@
    <div class="row middle-hight">
       <div class="col-12">
          <div class="table-responsive  ">
-            <table id="withHoldingTaxTbl" class="table table-striped table-hover table-bordered">
+            <table id="incomeTaxTbl" class="table table-striped table-hover table-bordered">
                <thead class="text-white gradient-background text-uppercase fw-light font-14">
                   <th>DATE</th>
-                  <th>PAYMENT DETAILS 
+                  <th>PAYMENT DETAILS
                   </th>
                   <th>VIEW DOCUMENT
                   </th>
-                  
+
                   </tr>
                </thead>
                <tbody class="font-13 fw-500 align-items-center">
                   <tr>
                     <td></td>
                     <td></td>
-                 
+
                      <td>
                         <button class="btn btn-info fw-500 font-11 px-2 w-100 rounded-pill "
                            data-bs-toggle="modal" data-bs-target="#errorDelete">
@@ -125,11 +124,11 @@
                               </div>
                            </div>
                         </div>
-                        
+
                      </td>
 
 
-                     
+
                   </tr>
                </tbody>
             </table>
