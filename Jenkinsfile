@@ -12,22 +12,15 @@ pipeline {
             }
         }
 
-        stage('Install SSH key') {
+        stage('Install SSH key and Deploy') {
             steps {
                 script {
-                    // Use ssh-agent to handle the SSH key
+                    // Using ssh-agent to securely handle the SSH key
                     sshagent(['GEEKMAC']) {
+                        // Verify if the SSH key is added and then deploy via SSH
                         sh 'ssh-add -l'  // List loaded SSH keys to verify
-                    }
-                }
-            }
-        }
 
-        stage('Deploy website via SSH') {
-            steps {
-                script {
-                    sshagent(['GEEKMAC']) {
-                        // Deploy files via scp and create timestamp file via ssh
+                        // Deploy files and create a timestamped file on the server
                         sh '''
                             scp -o StrictHostKeyChecking=no -r ./* root@18.140.137.114:/www/wwwroot/student.work.gd
                             ssh -o StrictHostKeyChecking=no root@18.140.137.114 "touch /www/wwwroot/student.work.gd/$(date +\"%Y-%m-%d_%H-%M-%S\").txt"
@@ -39,9 +32,11 @@ pipeline {
     }
 
     post {
-        cleanup {
-            // Remove the SSH key file if necessary//
-            sh 'rm -f id_rsa'
+        always {
+            // Ensure cleanup of sensitive files or any additional steps
+            echo 'Cleaning up workspace and removing any temporary files'
+            // Optionally, you can remove the SSH private key file here if needed
+            // sh 'rm -f id_rsa'
         }
     }
 }
