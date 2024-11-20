@@ -5,6 +5,7 @@ pipeline {
         SSH_PRIVATE_KEY = credentials('GEEKMAC')  // Ensure this is the correct ID for your SSH private key credentials
     }
 
+    
     stages {
         stage('Checkout code') {
             steps {
