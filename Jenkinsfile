@@ -1,42 +1,52 @@
 pipeline {
     agent any
 
-    environment {
-        SSH_PRIVATE_KEY = credentials('GEEKMAC')  // Ensure this is the correct ID for your SSH private key credentials
-    }
-
     stages {
-        stage('Checkout code') {
+        stage('Clone Repository') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/dev']], userRemoteConfigs: [[url: 'https://github.com/Geek-Mac-Solutions/students-panel.git']]])  // Change URL to your repo
+                git 'https://github.com/Geek-Mac-Solutions/admin-panel.git'
             }
         }
 
-        stage('Install SSH key and Deploy') {
+        stage('Copy Workspace to Live') {
             steps {
                 script {
-                    // Using ssh-agent to securely handle the SSH key
-                    sshagent(['GEEKMAC']) {
-                        // Verify if the SSH key is added and then deploy via SSH
-                        sh 'ssh-add -l'  // List loaded SSH keys to verify
+                    // Define the source and destination directories
+                    def sourceDir = "/var/lib/jenkins/workspace/${JOB_NAME}/"  // Use the correct job name for dynamic path
+                    def destinationDir = "/www/wwwroot/student.work.gd/"
 
-                        // Deploy files and create a timestamped file on the server
-                        sh '''
-                            scp -o StrictHostKeyChecking=no -r ./* root@18.140.137.114:/www/wwwroot/student.work.gd
-                            ssh -o StrictHostKeyChecking=no root@18.140.137.114 "touch /www/wwwroot/student.work.gd/$(date +\"%Y-%m-%d_%H-%M-%S\").txt"
-                        '''
-                    }
+                    // Ensure the target directory exists before copying
+                    sh "mkdir -p ${destinationDir}"
+
+                    // Copy the files to the live environment
+                    sh "cp -r \"${sourceDir}\"* ${destinationDir}"
                 }
+            }
+        }
+
+        stage('Deploy Live') {
+            steps {
+                // Example of deploying to live, could include Docker restart, service start, etc.
+                echo 'Deploying live...'
+                // Add any additional commands you need for the deployment
+            }
+        }
+
+        stage('Clean Workspace') {
+            steps {
+                echo 'Cleaning workspace...'
+                // Remove the files from the workspace after deployment
+                cleanWs()
             }
         }
     }
 
     post {
-        always {
-            // Ensure cleanup of sensitive files or any additional steps
-            echo 'Cleaning up workspace and removing any temporary files'
-            // Optionally, you can remove the SSH private key file here if needed
-            // sh 'rm -f id_rsa'
+        success {
+            echo 'Build and deployment succeeded!'
+        }
+        failure {
+            echo 'Build or deployment failed.'
         }
     }
 }
