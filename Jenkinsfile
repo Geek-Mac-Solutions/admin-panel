@@ -29,8 +29,8 @@ pipeline {
                     sshagent(['GEEKMAC']) {
                         // Deploy files via scp and create timestamp file via ssh
                         sh '''
-                            scp -o StrictHostKeyChecking=no -r ./* root@52.221.10.55:/www/wwwroot/student.work.gd
-                            ssh -o StrictHostKeyChecking=no root@52.221.10.55 "touch /www/wwwroot/student.work.gd/$(date +\"%Y-%m-%d_%H-%M-%S\").txt"
+                            scp -o StrictHostKeyChecking=no -r ./* root@18.140.137.114:/www/wwwroot/student.work.gd
+                            ssh -o StrictHostKeyChecking=no root@18.140.137.114 "touch /www/wwwroot/student.work.gd/$(date +\"%Y-%m-%d_%H-%M-%S\").txt"
                         '''
                     }
                 }
